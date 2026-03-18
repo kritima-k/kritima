@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WHERE Clause</title>
+  <link rel="stylesheet" href="style.css">
+  <a href="index.html">
+   <button>⬅ Back to Home</button>
+</a>
+</head>
+
+<body>
+
+<header>
+  <h1>DATABASE MANAGEMENT SYSTEM</h1>
+  <p><b>Name:</b> Kritima</p>
+  <p><b>Class:</b> BCA(4th SEM)</p>
+  <p><b>Topic:</b> WHERE Clause (60 Questions)</p>
+</header>
+
+<h2>WHERE CLAUSE QUESTIONS</h2>
+
+<ol>
+  <li><a href="#q1">Display employees whose salary is greater than 3000.</a></li>
+  <li><a href="#q2">Display employees working in department 10.</a></li>
+  <li><a href="#q3">Display employees whose job is 'CLERK'.</a></li>
+  <li><a href="#q4">Display employees hired after 01-JAN-81.</a></li>
+  <li><a href="#q5">Display employees whose salary is less than 1500.</a></li>
+  <li><a href="#q6">Display employees whose salary &gt; 2000 and job is 'MANAGER'.</a></li>
+  <li><a href="#q7">Display employees working in department 10 or 20.</a></li>
+  <li><a href="#q8">Display employees whose job is 'SALESMAN' and salary &gt; 1500.</a></li>
+  <li><a href="#q9">Display employees who are either CLERK or ANALYST.</a></li>
+  <li><a href="#q10">Display employees hired before 1982 and working in department 30.</a></li>
+
+  <li><a href="#q11">Display employees working in departments 10, 20 or 30.</a></li>
+  <li><a href="#q12">Display employees whose job is not MANAGER or CLERK.</a></li>
+  <li><a href="#q13">Display employees whose department is not 10.</a></li>
+  <li><a href="#q14">Display employees whose salary is between 1000 and 3000.</a></li>
+  <li><a href="#q15">Display employees hired between 01-JAN-81 and 31-DEC-81.</a></li>
+
+  <li><a href="#q16">Display employees whose name starts with 'A'.</a></li>
+  <li><a href="#q17">Display employees whose name ends with 'N'.</a></li>
+  <li><a href="#q18">Display employees whose name contains 'LL'.</a></li>
+  <li><a href="#q19">Display employees whose name has exactly 5 characters.</a></li>
+  <li><a href="#q20">Display employees whose second character is 'A'.</a></li>
+
+  <li><a href="#q21">Display all employees ordered by salary (ascending).</a></li>
+  <li><a href="#q22">Display all employees ordered by salary (descending).</a></li>
+  <li><a href="#q23">Display employees ordered by hire date.</a></li>
+  <li><a href="#q24">Display employees ordered by department number and salary.</a></li>
+  <li><a href="#q25">Display employees ordered by job (asc) and salary (desc).</a></li>
+
+  <li><a href="#q26">Display employee names ordered alphabetically.</a></li>
+  <li><a href="#q27">Display employees of department 30 ordered by salary.</a></li>
+  <li><a href="#q28">Display employees ordered by annual salary.</a></li>
+  <li><a href="#q29">Display employees ordered by commission.</a></li>
+  <li><a href="#q30">Display employees ordered by job and name.</a></li>
+
+  <li><a href="#q31">Display employee name as Employee_Name.</a></li>
+  <li><a href="#q32">Display salary as Monthly_Salary.</a></li>
+  <li><a href="#q33">Display salary × 12 as Annual_Salary.</a></li>
+  <li><a href="#q34">Display employee name and job with aliases.</a></li>
+  <li><a href="#q35">Display department number as Dept_No.</a></li>
+
+  <li><a href="#q36">Display employee name and salary with aliases.</a></li>
+  <li><a href="#q37">Display commission as Incentive.</a></li>
+  <li><a href="#q38">Display hire date as Joining_Date.</a></li>
+  <li><a href="#q39">Display employee name and department with aliases.</a></li>
+  <li><a href="#q40">Display job and salary using aliases.</a></li>
+
+  <li><a href="#q41">Display employees whose commission is NULL.</a></li>
+  <li><a href="#q42">Display employees who are getting commission.</a></li>
+  <li><a href="#q43">Display employees who do not have a manager.</a></li>
+  <li><a href="#q44">Display employees whose manager is not NULL.</a></li>
+  <li><a href="#q45">Display employees whose commission is NULL and salary &gt; 2000.</a></li>
+
+  <li><a href="#q46">Display employees whose commission is NULL or salary &gt; 3000.</a></li>
+  <li><a href="#q47">Display employees whose commission is NOT NULL and salary and DEpartment is 30.</a></li>
+  <li><a href="#q48">Display employees who do not earn commission and work in department 20.</a></li>
+  <li><a href="#q49">Display employees whose manager is NULL and salary &gt; 4000.</a></li>
+  <li><a href="#q50">Display employees whose commission is NULL but job is SALESMAN.</a></li>
+
+  <li><a href="#q51">Display employee name and annual salary, ordered by annual salary.</a></li>
+  <li><a href="#q52">Display employees whose commission is NULL, ordered by salary desc.</a></li>
+  <li><a href="#q53">Display employee name as Name and salary as Pay for department 10.</a></li>
+  <li><a href="#q54">Display employees hired before 1982 with aliases, ordered by hire date.</a></li>
+  <li><a href="#q55">Display employees whose name starts with 'S', ordered by salary.</a></li>
+
+  <li><a href="#q56">Display employee name and department, ordered by department and name.</a></li>
+  <li><a href="#q57">Display employees whose salary is between 1500 and 3000, ordered by salary.</a></li>
+  <li><a href="#q58">Display employees whose commission is NOT NULL, ordered by commission.</a></li>
+  <li><a href="#q59">Display employees of department 30 whose salary &gt; 1500, ordered by salary.</a></li>
+  <li><a href="#q60">Display employee name, job and salary with aliases, ordered by job.</a></li>
+</ol>
+
+<!-- OUTPUT SECTIONS (1–60) -->
+
+<!-- COPY STYLE – IMAGE NAMES ARE CORRECT -->
+
+<div id="q1" class="output"><h3>Q1 Output</h3><img src="whereclaus/whereq1.jpg.png"></div>
+<div id="q2" class="output"><h3>Q2 Output</h3><img src="whereclaus/whereq2.jpg.png"></div>
+<div id="q3" class="output"><h3>Q3 Output</h3><img src="whereclaus/whereq3.jpg.png"></div>
+<div id="q4" class="output"><h3>Q4 Output</h3><img src="whereclaus/whereq4.jpg.png"></div>
+<div id="q5" class="output"><h3>Q5 Output</h3><img src="whereclaus/whereq5.jpg.png"></div>
+
+<div id="q6" class="output"><h3>Q6 Output</h3><img src="whereclaus/whereq6.jpg.png"></div>
+<div id="q7" class="output"><h3>Q7 Output</h3><img src="whereclaus/whereq7.jpg.png"></div>
+<div id="q8" class="output"><h3>Q8 Output</h3><img src="whereclaus/whereq8.jpg.png"></div>
+<div id="q9" class="output"><h3>Q9 Output</h3><img src="whereclaus/whereq9.jpg.png"></div>
+<div id="q10" class="output"><h3>Q10 Output</h3><img src="whereclaus/whereq10.jpg.png"></div>
+
+<div id="q11" class="output"><h3>Q11 Output</h3><img src="whereclaus/whereq11.jpg.png"></div>
+<div id="q12" class="output"><h3>Q12 Output</h3><img src="whereclaus/whereq12.jpg.png"></div>
+<div id="q13" class="output"><h3>Q13 Output</h3><img src="whereclaus/whereq13.jpg.png"></div>
+<div id="q14" class="output"><h3>Q14 Output</h3><img src="whereclaus/whereq14.jpg.png"></div>
+<div id="q15" class="output"><h3>Q15 Output</h3><img src="whereclaus/whereq15.jpg.png"></div>
+
+<div id="q16" class="output"><h3>Q16 Output</h3><img src="whereclaus/whereq16.png.png"></div>
+<div id="q17" class="output"><h3>Q17 Output</h3><img src="whereclaus/whereq17.jpg.png"></div>
+<div id="q18" class="output"><h3>Q18 Output</h3><img src="whereclaus/whereq18.jpg.png"></div>
+<div id="q19" class="output"><h3>Q19 Output</h3><img src="whereclaus/whereq19.jpg.png"></div>
+<div id="q20" class="output"><h3>Q20 Output</h3><img src="whereclaus/whereq20.jpg.png"></div>
+
+<div id="q21" class="output"><h3>Q21 Output</h3><img src="whereclaus/whereq21.jpg.png"></div>
+<div id="q22" class="output"><h3>Q22 Output</h3><img src="whereclaus/whereq22.jpg.png"></div>
+<div id="q23" class="output"><h3>Q23 Output</h3><img src="whereclaus/whereq23.jpg.png"></div>
+<div id="q24" class="output"><h3>Q24 Output</h3><img src="whereclaus/whereq24.jpg.png"></div>
+<div id="q25" class="output"><h3>Q25 Output</h3><img src="whereclaus/whereq25.jpg.png"></div>
+
+<div id="q26" class="output"><h3>Q26 Output</h3><img src="whereclaus/whereq26.jpg.png"></div>
+<div id="q27" class="output"><h3>Q27 Output</h3><img src="whereclaus/whereq27.jpg.png"></div>
+<div id="q28" class="output"><h3>Q28 Output</h3><img src="whereclaus/whereq28.jpg.png"></div>
+<div id="q29" class="output"><h3>Q29 Output</h3><img src="whereclaus/whereq29.jpg.png"></div>
+<div id="q30" class="output"><h3>Q30 Output</h3><img src="whereclaus/whereq30.jpg.png"></div>
+
+<div id="q31" class="output"><h3>Q31 Output</h3><img src="whereclaus/whereq31.jpg.png"></div>
+<div id="q32" class="output"><h3>Q32 Output</h3><img src="whereclaus/whereq32.jpg.png"></div>
+<div id="q33" class="output"><h3>Q33 Output</h3><img src="whereclaus/whereq33.jpg.png"></div>
+<div id="q34" class="output"><h3>Q34 Output</h3><img src="whereclaus/whereq34.jpg.png"></div>
+<div id="q35" class="output"><h3>Q35 Output</h3><img src="whereclaus/whereq35.jpg.png"></div>
+
+<div id="q36" class="output"><h3>Q36 Output</h3><img src="whereclaus/whereq36.jpg.png"></div>
+<div id="q37" class="output"><h3>Q37 Output</h3><img src="whereclaus/whereq37.jpg.png"></div>
+<div id="q38" class="output"><h3>Q38 Output</h3><img src="whereclaus/whereq38.jpg.png"></div>
+<div id="q39" class="output"><h3>Q39 Output</h3><img src="whereclaus/whereq39.jpg.png"></div>
+<div id="q40" class="output"><h3>Q40 Output</h3><img src="whereclaus/whereq40.jpg.png"></div>
+
+<div id="q41" class="output"><h3>Q41 Output</h3><img src="whereclaus/whereq41.jpg.png"></div>
+<div id="q42" class="output"><h3>Q42 Output</h3><img src="whereclaus/whereq42.jpg.png"></div>
+<div id="q43" class="output"><h3>Q43 Output</h3><img src="whereclaus/whereq43.jpg.png"></div>
+<div id="q44" class="output"><h3>Q44 Output</h3><img src="whereclaus/whereq44.jpg.png"></div>
+<div id="q45" class="output"><h3>Q45 Output</h3><img src="whereclaus/whereq45.jpg.png"></div>
+
+<div id="q46" class="output"><h3>Q46 Output</h3><img src="whereclaus/whereq46.jpg.png"></div>
+<div id="q47" class="output"><h3>Q47 Output</h3><img src="whereclaus/whereq47.jpg.png"></div>
+<div id="q48" class="output"><h3>Q48 Output</h3><img src="whereclaus/whereq48.jpg.png"></div>
+<div id="q49" class="output"><h3>Q49 Output</h3><img src="whereclaus/whereq49.jpg.png"></div>
+<div id="q50" class="output"><h3>Q50 Output</h3><img src="whereclaus/whereq50.jpg.png"></div>
+
+<div id="q51" class="output"><h3>Q51 Output</h3><img src="whereclaus/whereq51.jpg.png"></div>
+<div id="q52" class="output"><h3>Q52 Output</h3><img src="whereclaus/whereq52.jpg.png"></div>
+<div id="q53" class="output"><h3>Q53 Output</h3><img src="whereclaus/whereq53.jpg.png"></div>
+<div id="q54" class="output"><h3>Q54 Output</h3><img src="whereclaus/whereq54.jpg.png"></div>
+<div id="q55" class="output"><h3>Q55 Output</h3><img src="whereclaus/whereq55.jpg.png"></div>
+
+<div id="q56" class="output"><h3>Q56 Output</h3><img src="whereclaus/whereq56.jpg.png"></div>
+<div id="q57" class="output"><h3>Q57 Output</h3><img src="whereclaus/whereq57.jpg.png"></div>
+<div id="q58" class="output"><h3>Q58 Output</h3><img src="whereclaus/whereq58.jpg.png"></div>
+<div id="q59" class="output"><h3>Q59 Output</h3><img src="whereclaus/whereq59.jpg.png"></div>
+<div id="q60" class="output"><h3>Q60 Output</h3><img src="whereclaus/whereq60.jpg.png"></div>
+
+</body>
+</html>
