@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Subqueries (1–70)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html">
+    <button>⬅ Back to Home</button>
+</a>
+
+<header>
+    <h1>DATABASE MANAGEMENT SYSTEM</h1>
+    <p><b>Name:</b> Kritima</p>
+    <p><b>Class:</b> BCA (4th SEM)</p>
+    <p><b>Topic:</b> Subqueries (70 Questions)</p>
+</header>
+
+<h2>SUBQUERY QUESTIONS</h2>
+
+<ol>
+<ol>
+
+<li><a href="#q1">Display employees whose salary is greater than JONES.</a></li>
+
+<li><a href="#q2">Display employees earning the same salary as SCOTT.</a></li>
+
+<li><a href="#q3">Display employees hired after ALLEN.</a></li>
+
+<li><a href="#q4">Display employees working in the same department as BLAKE.</a></li>
+
+<li><a href="#q5">Display employees having the same job as MILLER.</a></li>
+
+<li><a href="#q6">Display employees earning less than the average salary.</a></li>
+
+<li><a href="#q7">Display employees earning more than the maximum salary of CLERKs.</a></li>
+
+<li><a href="#q8">Display employee(s) with the minimum salary.</a></li>
+
+<li><a href="#q9">Display employee(s) with the maximum salary.</a></li>
+
+<li><a href="#q10">Display employees working in the department named ACCOUNTING.</a></li>
+
+<li><a href="#q11">Display employees working in departments located in NEW YORK.</a></li>
+
+<li><a href="#q12">Display employees whose salary matches any salary in department 30.</a></li>
+
+<li><a href="#q13">Display employees earning more than all CLERKs.</a></li>
+
+<li><a href="#q14">Display employees earning less than any MANAGER.</a></li>
+
+<li><a href="#q15">Display employees whose job appears in department 20.</a></li>
+
+<li><a href="#q16">Display employees whose department has at least one SALESMAN.</a></li>
+
+<li><a href="#q17">Display employees earning the same salary as any CLERK.</a></li>
+
+<li><a href="#q18">Display employees who are not working in departments of SALESMAN.</a></li>
+
+<li><a href="#q19">Display employees earning more than all employees in department 10.</a></li>
+
+<li><a href="#q20">Display employees whose department number is among departments with more than 3 employees.</a></li>
+
+<li><a href="#q21">Display employees earning more than the department average salary.</a></li>
+
+<li><a href="#q22">Display employees earning the highest salary in each department.</a></li>
+
+<li><a href="#q23">Display employees earning the lowest salary in each job.</a></li>
+
+<li><a href="#q24">Display departments having total salary greater than department 20.</a></li>
+
+<li><a href="#q25">Display employees whose salary equals the maximum salary of their job.</a></li>
+
+<li><a href="#q26">Display employees earning more than the overall average salary.</a></li>
+
+<li><a href="#q27">Display department(s) having the maximum number of employees.</a></li>
+
+<li><a href="#q28">Display jobs having minimum average salary.</a></li>
+
+<li><a href="#q29">Display employees earning more than the average salary of CLERKs.</a></li>
+
+<li><a href="#q30">Display department(s) where average salary is highest.</a></li>
+
+<li><a href="#q31">Display employees earning more than the average salary of their own department.</a></li>
+
+<li><a href="#q32">Display employees earning the maximum salary in their department.</a></li>
+
+<li><a href="#q33">Display employees earning the minimum salary in their department.</a></li>
+
+<li><a href="#q34">Display employees whose salary is greater than the average salary of their job.</a></li>
+
+<li><a href="#q35">Display employees who are the only employee in their department.</a></li>
+
+<li><a href="#q36">Display departments having employees earning more than 5000.</a></li>
+
+<li><a href="#q37">Display employees whose department has more than 3 employees.</a></li>
+
+<li><a href="#q38">Display employees whose job has more than 2 employees.</a></li>
+
+<li><a href="#q39">Display employees working in departments where no one gets commission.</a></li>
+
+<li><a href="#q40">Display employees whose department has at least one manager.</a></li>
+
+<li><a href="#q41">Display departments that have employees.</a></li>
+
+<li><a href="#q42">Display departments that have no employees.</a></li>
+
+<li><a href="#q43">Display employees who are managers (have subordinates).</a></li>
+
+<li><a href="#q44">Display employees who are not managers.</a></li>
+
+<li><a href="#q45">Display employees working in departments where SALESMAN exists.</a></li>
+
+<li><a href="#q46">Display departments where no SALESMAN exists.</a></li>
+
+<li><a href="#q47">Display employees whose department has employees with commission.</a></li>
+
+<li><a href="#q48">Display departments where all employees get commission.</a></li>
+
+<li><a href="#q49">Display employees whose department has no CLERKs.</a></li>
+
+<li><a href="#q50">Display employees who work in departments located in CHICAGO.</a></li>
+
+<li><a href="#q51">Display department number and average salary of employees whose salary is greater than 2000.</a></li>
+
+<li><a href="#q52">Display job and total salary of employees earning more than the department average.</a></li>
+
+<li><a href="#q53">Display departments having average salary greater than overall average salary.</a></li>
+
+<li><a href="#q54">Display job-wise employee count from employees earning more than 1500.</a></li>
+
+<li><a href="#q55">Display departments having more than 2 employees earning commission.</a></li>
+
+<li><a href="#q56">Display job and maximum salary from employees hired after 1981.</a></li>
+
+<li><a href="#q57">Display department-wise total salary excluding department 30.</a></li>
+
+<li><a href="#q58">Display departments having total salary greater than overall total salary average.</a></li>
+
+<li><a href="#q59">Display job-wise average salary where department has more than 3 employees.</a></li>
+
+<li><a href="#q60">Display department and job having maximum total salary.</a></li>
+
+<li><a href="#q61">Display employees earning the second highest salary.</a></li>
+
+<li><a href="#q62">Display employees earning the third highest salary.</a></li>
+
+<li><a href="#q63">Display employees whose salary is greater than 50% of employees.</a></li>
+
+<li><a href="#q64">Display employees earning more than the median salary.</a></li>
+
+<li><a href="#q65">Display employees whose salary is equal to department-wise second highest salary.</a></li>
+
+<li><a href="#q66">Display employees whose salary is less than all MANAGERS but more than any CLERK.</a></li>
+
+<li><a href="#q67">Display departments where maximum salary equals minimum salary.</a></li>
+
+<li><a href="#q68">Display employees earning more than the average salary of departments located in DALLAS.</a></li>
+
+<li><a href="#q69">Display jobs where average salary is greater than overall average salary.</a></li>
+
+<li><a href="#q70">Display employees whose salary is greater than salary of their manager.</a></li>
+
+</ol>
+</ol>
+
+<hr>
+
+<!-- OUTPUT + SQL -->
+
+</div><ol>
+
+<div id="q1" class="output"><h3>Q1 Output</h3><img src="subqueris/subqu1.jpg.png"></div>
+<div id="q2" class="output"><h3>Q2 Output</h3><img src="subqueris/subqu2.jpg.png"></div>
+<div id="q3" class="output"><h3>Q3 Output</h3><img src="subqueris/subqu3.jpg.png"></div>
+<div id="q4" class="output"><h3>Q4 Output</h3><img src="subqueris/subqu4.jpg.png"></div>
+<div id="q5" class="output"><h3>Q5 Output</h3><img src="subqueris/subqu5.jpg.png"></div>
+<div id="q6" class="output"><h3>Q6 Output</h3><img src="subqueris/subqu6.jpg.png"></div>
+<div id="q7" class="output"><h3>Q7 Output</h3><img src="subqueris/subqu7.jpg.png"></div>
+<div id="q8" class="output"><h3>Q8 Output</h3><img src="subqueris/subqu8.jpg.png"></div>
+<div id="q9" class="output"><h3>Q9 Output</h3><img src="subqueris/subqu9.jpg.png"></div>
+<div id="q10" class="output"><h3>Q10 Output</h3><img src="subqueris/subqu10.jpg.png"></div>
+
+<div id="q11" class="output"><h3>Q11 Output</h3><img src="subqueris/subqu11.jpg.png"></div>
+<div id="q12" class="output"><h3>Q12 Output</h3><img src="subqueris/subqu12.jpg.png"></div>
+<div id="q13" class="output"><h3>Q13 Output</h3><img src="subqueris/subqu13.jpg.png"></div>
+<div id="q14" class="output"><h3>Q14 Output</h3><img src="subqueris/subqu14.jpg.png"></div>
+<div id="q15" class="output"><h3>Q15 Output</h3><img src="subqueris/subqu15.jpg.png"></div>
+<div id="q16" class="output"><h3>Q16 Output</h3><img src="subqueris/subqu16.jpg.png"></div>
+<div id="q17" class="output"><h3>Q17 Output</h3><img src="subqueris/subqu17.jpg.png"></div>
+<div id="q18" class="output"><h3>Q18 Output</h3><img src="subqueris/subqu18.jpg.png"></div>
+<div id="q19" class="output"><h3>Q19 Output</h3><img src="subqueris/subqu19.jpg.png"></div>
+<div id="q20" class="output"><h3>Q20 Output</h3><img src="subqueris/subqu20.jpg.png"></div>
+
+<div id="q21" class="output"><h3>Q21 Output</h3><img src="subqueris/subqu21.jpg.png"></div>
+<div id="q22" class="output"><h3>Q22 Output</h3><img src="subqueris/subqu22.jpg.png"></div>
+<div id="q23" class="output"><h3>Q23 Output</h3><img src="subqueris/subqu23.jpg.png"></div>
+<div id="q24" class="output"><h3>Q24 Output</h3><img src="subqueris/subqu24.jpg.png"></div>
+<div id="q25" class="output"><h3>Q25 Output</h3><img src="subqueris/subqu25.jpg.png"></div>
+<div id="q26" class="output"><h3>Q26 Output</h3><img src="subqueris/subqu26.jpg.png"></div>
+<div id="q27" class="output"><h3>Q27 Output</h3><img src="subqueris/subqu27.jpg.png"></div>
+<div id="q28" class="output"><h3>Q28 Output</h3><img src="subqueris/subqu28.jpg.png"></div>
+<div id="q29" class="output"><h3>Q29 Output</h3><img src="subqueris/subqu29.jpg.png"></div>
+<div id="q30" class="output"><h3>Q30 Output</h3><img src="subqueris/subqu30.jpg.png"></div>
+<div id="q31" class="output"><h3>Q31 Output</h3><img src="subqueris/subqu31.jpg.png"></div>
+<div id="q32" class="output"><h3>Q32 Output</h3><img src="subqueris/subqu32.jpg.png"></div>
+<div id="q33" class="output"><h3>Q33 Output</h3><img src="subqueris/subqu33.jpg.png"></div>
+<div id="q34" class="output"><h3>Q34 Output</h3><img src="subqueris/subqu34.jpg.png"></div>
+<div id="q35" class="output"><h3>Q35 Output</h3><img src="subqueris/subqu35.jpg.png"></div>
+<div id="q36" class="output"><h3>Q36 Output</h3><img src="subqueris/subqu36.jpg.png"></div>
+<div id="q37" class="output"><h3>Q37 Output</h3><img src="subqueris/subqu37.jpg.png"></div>
+<div id="q38" class="output"><h3>Q38 Output</h3><img src="subqueris/subqu38.jpg.png"></div>
+<div id="q39" class="output"><h3>Q39 Output</h3><img src="subqueris/subqu39.jpg.png"></div>
+<div id="q40" class="output"><h3>Q40 Output</h3><img src="subqueris/subqu40.jpg.png"></div>
+
+<div id="q41" class="output"><h3>Q41 Output</h3><img src="subqueris/subqu41.jpg.png"></div>
+<div id="q42" class="output"><h3>Q42 Output</h3><img src="subqueris/subqu42.jpg.png"></div>
+<div id="q43" class="output"><h3>Q43 Output</h3><img src="subqueris/subqu43.jpg.png"></div>
+<div id="q44" class="output"><h3>Q44 Output</h3><img src="subqueris/subqu44.jpg.png"></div>
+<div id="q45" class="output"><h3>Q45 Output</h3><img src="subqueris/subqu45.jpg.png"></div>
+<div id="q46" class="output"><h3>Q46 Output</h3><img src="subqueris/subqu46.jpg.png"></div>
+<div id="q47" class="output"><h3>Q47 Output</h3><img src="subqueris/subqu47.jpg.png"></div>
+<div id="q48" class="output"><h3>Q48 Output</h3><img src="subqueris/subqu48.jpg.png"></div>
+<div id="q49" class="output"><h3>Q49 Output</h3><img src="subqueris/subqu49.jpg.png"></div>
+<div id="q50" class="output"><h3>Q50 Output</h3><img src="subqueris/subqu50.jpg.png"></div>
+
+<div id="q51" class="output"><h3>Q51 Output</h3><img src="subqueris/subqu51.jpg.png"></div>
+<div id="q52" class="output"><h3>Q52 Output</h3><img src="subqueris/subqu52.jpg.png"></div>
+<div id="q53" class="output"><h3>Q53 Output</h3><img src="subqueris/subqu53.jpg.png"></div>
+<div id="q54" class="output"><h3>Q54 Output</h3><img src="subqueris/subqu54.jpg.png"></div>
+<div id="q55" class="output"><h3>Q55 Output</h3><img src="subqueris/subqu55.jpg.png"></div>
+<div id="q56" class="output"><h3>Q56 Output</h3><img src="subqueris/subqu56.jpg.png"></div>
+<div id="q57" class="output"><h3>Q57 Output</h3><img src="subqueris/subqu57.jpg.png"></div>
+<div id="q58" class="output"><h3>Q58 Output</h3><img src="subqueris/subqu58.jpg.png"></div>
+<div id="q59" class="output"><h3>Q59 Output</h3><img src="subqueris/subqu59.jpg.png"></div>
+<div id="q60" class="output"><h3>Q60 Output</h3><img src="subqueris/subqu60.jpg.png"></div>
+
+<div id="q61" class="output"><h3>Q61 Output</h3><img src="subqueris/subqu61.jpg.png"></div>
+<div id="q62" class="output"><h3>Q62 Output</h3><img src="subqueris/subqu62.jpg.png"></div>
+<div id="q63" class="output"><h3>Q63 Output</h3><img src="subqueris/subqu63.jpg.png"></div>
+<div id="q64" class="output"><h3>Q64 Output</h3><img src="subqueris/subqu64.jpg.png"></div>
+<div id="q65" class="output"><h3>Q65 Output</h3><img src="subqueris/subqu65.jpg.png"></div>
+<div id="q66" class="output"><h3>Q66 Output</h3><img src="subqueris/subqu66.jpg.png"></div>
+<div id="q67" class="output"><h3>Q67 Output</h3><img src="subqueris/subqu67.jpg.png"></div>
+<div id="q68" class="output"><h3>Q68 Output</h3><img src="subqueris/subqu68.jpg.png"></div>
+<div id="q69" class="output"><h3>Q69 Output</h3><img src="subqueris/subqu69.jpg.png"></div>
+<div id="q70" class="output"><h3>Q70 Output</h3><img src="subqueris/subqu70.jpg.png"></div>
+
+</ol>
+
+<!-- IMPORTANT -->
+<!-- Continue same pattern -->

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Group Functions</title>
+
+<link rel="stylesheet" href="style.css">
+
+<a href="index.html">
+<button>⬅ Back to Home</button>
+</a>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>DATABASE MANAGEMENT SYSTEM</h1>
+
+<p><b>Name:</b> Kritima</p>
+
+<p><b>Class:</b> BCA(4th SEM)</p>
+
+<p><b>Topic:</b> Group Functions (70 Questions)</p>
+
+</header>
+
+
+<h2>GROUP FUNCTION QUESTIONS</h2>
+
+
+<ol>
+
+<li><a href="#q1">Display the total number of employees.</a></li>
+<li><a href="#q2">Display the total salary of all employees.</a></li>
+<li><a href="#q3">Display the average salary of all employees.</a></li>
+<li><a href="#q4">Display the highest salary.</a></li>
+<li><a href="#q5">Display the lowest salary.</a></li>
+
+<li><a href="#q6">Display the total number of departments in EMP table.</a></li>
+<li><a href="#q7">Display the number of employees who are managers.</a></li>
+<li><a href="#q8">Display the total commission paid.</a></li>
+<li><a href="#q9">Display the average commission.</a></li>
+<li><a href="#q10">Display number of employees getting commission.</a></li>
+
+<li><a href="#q11">Display department-wise total salary.</a></li>
+<li><a href="#q12">Display department-wise average salary.</a></li>
+<li><a href="#q13">Display department-wise number of employees.</a></li>
+<li><a href="#q14">Display job-wise number of employees.</a></li>
+<li><a href="#q15">Display job-wise total salary.</a></li>
+
+<li><a href="#q16">Display job-wise maximum salary.</a></li>
+<li><a href="#q17">Display job-wise minimum salary.</a></li>
+<li><a href="#q18">Display department-wise maximum salary.</a></li>
+<li><a href="#q19">Display department-wise minimum salary.</a></li>
+<li><a href="#q20">Display department-wise average commission.</a></li>
+
+<li><a href="#q21">Display department-wise job-wise number of employees.</a></li>
+<li><a href="#q22">Display department-wise job-wise total salary.</a></li>
+<li><a href="#q23">Display department-wise job-wise average salary.</a></li>
+<li><a href="#q24">Display job-wise department-wise maximum salary.</a></li>
+<li><a href="#q25">Display job-wise department-wise minimum salary.</a></li>
+
+<li><a href="#q26">Display department and job having highest total salary.</a></li>
+<li><a href="#q27">Display department and job having lowest average salary.</a></li>
+<li><a href="#q28">Display department-wise job-wise total commission.</a></li>
+<li><a href="#q29">Display department-wise job-wise employee count.</a></li>
+<li><a href="#q30">Display department and job having maximum number of employees.</a></li>
+
+<li><a href="#q31">Display department-wise total salary for department numbers greater than 10.</a></li>
+<li><a href="#q32">Display job-wise employee count where salary greater than 2000.</a></li>
+<li><a href="#q33">Display department-wise average salary for employees hired after 1981.</a></li>
+<li><a href="#q34">Display job-wise total salary for CLERK and MANAGER.</a></li>
+<li><a href="#q35">Display department-wise number of employees where commission NOT NULL.</a></li>
+
+<li><a href="#q36">Display job-wise average salary where department is 20.</a></li>
+<li><a href="#q37">Display department-wise total salary excluding department 30.</a></li>
+<li><a href="#q38">Display job-wise max salary where salary greater than 1500.</a></li>
+<li><a href="#q39">Display department-wise employee count where job is SALESMAN.</a></li>
+<li><a href="#q40">Display job-wise total commission where commission NOT NULL.</a></li>
+
+<li><a href="#q41">Display departments having more than 3 employees.</a></li>
+<li><a href="#q42">Display jobs having average salary greater than 2500.</a></li>
+<li><a href="#q43">Display departments whose total salary greater than 10000.</a></li>
+<li><a href="#q44">Display jobs having more than 2 employees.</a></li>
+<li><a href="#q45">Display departments having maximum salary greater than 4000.</a></li>
+
+<li><a href="#q46">Display jobs whose minimum salary less than 1000.</a></li>
+<li><a href="#q47">Display department-wise total salary where employee count greater than 4.</a></li>
+<li><a href="#q48">Display job-wise average salary where total salary greater than 5000.</a></li>
+<li><a href="#q49">Display departments having employees with commission.</a></li>
+<li><a href="#q50">Display jobs having more than one manager.</a></li>
+
+<li><a href="#q51">Display department-wise count of employees getting commission.</a></li>
+<li><a href="#q52">Display job-wise total commission.</a></li>
+<li><a href="#q53">Display department-wise average commission excluding NULLs.</a></li>
+<li><a href="#q54">Display total commission ignoring NULLs.</a></li>
+<li><a href="#q55">Display number of employees without commission.</a></li>
+
+<li><a href="#q56">Display department-wise count where manager NULL.</a></li>
+<li><a href="#q57">Display job-wise average commission.</a></li>
+<li><a href="#q58">Display departments where all employees get commission.</a></li>
+<li><a href="#q59">Display departments where no employee gets commission.</a></li>
+<li><a href="#q60">Display job-wise employees without commission.</a></li>
+
+<li><a href="#q61">Display department number and total salary where average salary greater than overall average salary.</a></li>
+<li><a href="#q62">Display job having highest average salary.</a></li>
+<li><a href="#q63">Display department having minimum total salary.</a></li>
+<li><a href="#q64">Display jobs where max salary equals department 20 max salary.</a></li>
+<li><a href="#q65">Display departments having same number of employees.</a></li>
+
+<li><a href="#q66">Display jobs whose total salary more than salary of all CLERKs combined.</a></li>
+<li><a href="#q67">Display department having highest number of employees.</a></li>
+<li><a href="#q68">Display jobs having average salary greater than department average salary.</a></li>
+<li><a href="#q69">Display department where sum of salaries maximum.</a></li>
+<li><a href="#q70">Display job having minimum average salary.</a></li>
+
+</ol>
+
+
+<!-- OUTPUT SECTIONS -->
+<!-- OUTPUT SECTIONS -->
+
+<div id="q1" class="output"><h3>Q1 Output</h3><img src="groupfunction/groupq1.jpg.png"></div>
+<div id="q2" class="output"><h3>Q2 Output</h3><img src="groupfunction/groupq2.jpg.png"></div>
+<div id="q3" class="output"><h3>Q3 Output</h3><img src="groupfunction/groupq3.jpg.png"></div>
+<div id="q4" class="output"><h3>Q4 Output</h3><img src="groupfunction/groupq4.jpg.png"></div>
+<div id="q5" class="output"><h3>Q5 Output</h3><img src="groupfunction/groupq5.jpg.png"></div>
+
+<div id="q6" class="output"><h3>Q6 Output</h3><img src="groupfunction/groupq6.jpg.png"></div>
+<div id="q7" class="output"><h3>Q7 Output</h3><img src="groupfunction/groupq7.jpg.png"></div>
+<div id="q8" class="output"><h3>Q8 Output</h3><img src="groupfunction/groupq8.jpg.png"></div>
+<div id="q9" class="output"><h3>Q9 Output</h3><img src="groupfunction/groupq9.jpg.png"></div>
+<div id="q10" class="output"><h3>Q10 Output</h3><img src="groupfunction/groupq10.jpg.png"></div>
+
+<div id="q11" class="output"><h3>Q11 Output</h3><img src="groupfunction/groupq11.jpg.png"></div>
+<div id="q12" class="output"><h3>Q12 Output</h3><img src="groupfunction/groupq12.jpg.png"></div>
+<div id="q13" class="output"><h3>Q13 Output</h3><img src="groupfunction/groupq13.jpg.png"></div>
+<div id="q14" class="output"><h3>Q14 Output</h3><img src="groupfunction/groupq14.jpg.png"></div>
+<div id="q15" class="output"><h3>Q15 Output</h3><img src="groupfunction/groupq15.jpg.png"></div>
+
+<div id="q16" class="output"><h3>Q16 Output</h3><img src="groupfunction/groupq16.jpg.png"></div>
+<div id="q17" class="output"><h3>Q17 Output</h3><img src="groupfunction/groupq17.jpg.png"></div>
+<div id="q18" class="output"><h3>Q18 Output</h3><img src="groupfunction/groupq18.jpg.png"></div>
+<div id="q19" class="output"><h3>Q19 Output</h3><img src="groupfunction/groupq19.jpg.png"></div>
+<div id="q20" class="output"><h3>Q20 Output</h3><img src="groupfunction/groupq20.jpg.png"></div>
+
+<div id="q21" class="output"><h3>Q21 Output</h3><img src="groupfunction/groupq21.jpg.png"></div>
+<div id="q22" class="output"><h3>Q22 Output</h3><img src="groupfunction/groupq22.jpg.png"></div>
+<div id="q23" class="output"><h3>Q23 Output</h3><img src="groupfunction/groupq23.jpg.png"></div>
+<div id="q24" class="output"><h3>Q24 Output</h3><img src="groupfunction/groupq24.jpg.png"></div>
+<div id="q25" class="output"><h3>Q25 Output</h3><img src="groupfunction/groupq25.jpg.png"></div>
+
+<div id="q26" class="output"><h3>Q26 Output</h3><img src="groupfunction/groupq26.jpg.png"></div>
+<div id="q27" class="output"><h3>Q27 Output</h3><img src="groupfunction/groupq27.jpg.png"></div>
+<div id="q28" class="output"><h3>Q28 Output</h3><img src="groupfunction/groupq28.jpg.png"></div>
+<div id="q29" class="output"><h3>Q29 Output</h3><img src="groupfunction/groupq29.jpg.png"></div>
+<div id="q30" class="output"><h3>Q30 Output</h3><img src="groupfunction/groupq30.jpg.png"></div>
+
+<div id="q31" class="output"><h3>Q31 Output</h3><img src="groupfunction/groupq31.jpg.png"></div>
+<div id="q32" class="output"><h3>Q32 Output</h3><img src="groupfunction/groupq32.jpg.png"></div>
+<div id="q33" class="output"><h3>Q33 Output</h3><img src="groupfunction/groupq33.jpg.png"></div>
+<div id="q34" class="output"><h3>Q34 Output</h3><img src="groupfunction/groupq34.jpg.png"></div>
+<div id="q35" class="output"><h3>Q35 Output</h3><img src="groupfunction/groupq35.jpg.png"></div>
+
+<div id="q36" class="output"><h3>Q36 Output</h3><img src="groupfunction/groupq36.jpg.png"></div>
+<div id="q37" class="output"><h3>Q37 Output</h3><img src="groupfunction/groupq37.jpg.png"></div>
+<div id="q38" class="output"><h3>Q38 Output</h3><img src="groupfunction/groupq38.jpg.png"></div>
+<div id="q39" class="output"><h3>Q39 Output</h3><img src="groupfunction/groupq39.jpg.png"></div>
+<div id="q40" class="output"><h3>Q40 Output</h3><img src="groupfunction/groupq40.jpg.png"></div>
+
+<div id="q41" class="output"><h3>Q41 Output</h3><img src="groupfunction/groupq41.jpg.png"></div>
+<div id="q42" class="output"><h3>Q42 Output</h3><img src="groupfunction/groupq42.jpg.png"></div>
+<div id="q43" class="output"><h3>Q43 Output</h3><img src="groupfunction/groupq43.jpg.png"></div>
+<div id="q44" class="output"><h3>Q44 Output</h3><img src="groupfunction/groupq44.jpg.png"></div>
+<div id="q45" class="output"><h3>Q45 Output</h3><img src="groupfunction/groupq45.jpg.png"></div>
+
+<div id="q46" class="output"><h3>Q46 Output</h3><img src="groupfunction/groupq46.jpg.png"></div>
+<div id="q47" class="output"><h3>Q47 Output</h3><img src="groupfunction/groupq47.jpg.png"></div>
+<div id="q48" class="output"><h3>Q48 Output</h3><img src="groupfunction/groupq48.jpg.png"></div>
+<div id="q49" class="output"><h3>Q49 Output</h3><img src="groupfunction/groupq49.jpg.png"></div>
+<div id="q50" class="output"><h3>Q50 Output</h3><img src="groupfunction/groupq50.jpg.png"></div>
+
+<div id="q51" class="output"><h3>Q51 Output</h3><img src="groupfunction/groupq51.jpg.png"></div>
+<div id="q52" class="output"><h3>Q52 Output</h3><img src="groupfunction/groupq52.jpg.png"></div>
+<div id="q53" class="output"><h3>Q53 Output</h3><img src="groupfunction/groupq53.jpg.png"></div>
+<div id="q54" class="output"><h3>Q54 Output</h3><img src="groupfunction/groupq54.jpg.png"></div>
+<div id="q55" class="output"><h3>Q55 Output</h3><img src="groupfunction/groupq55.jpg.png"></div>
+
+<div id="q56" class="output"><h3>Q56 Output</h3><img src="groupfunction/groupq56.jpg.png"></div>
+<div id="q57" class="output"><h3>Q57 Output</h3><img src="groupfunction/groupq57.jpg.png"></div>
+<div id="q58" class="output"><h3>Q58 Output</h3><img src="groupfunction/groupq58.jpg.png"></div>
+<div id="q59" class="output"><h3>Q59 Output</h3><img src="groupfunction/groupq59.jpg.png"></div>
+<div id="q60" class="output"><h3>Q60 Output</h3><img src="groupfunction/groupq60.jpg.png"></div>
+
+<div id="q61" class="output"><h3>Q61 Output</h3><img src="groupfunction/groupq61.jpg.png"></div>
+<div id="q62" class="output"><h3>Q62 Output</h3><img src="groupfunction/groupq62.jpg.png"></div>
+<div id="q63" class="output"><h3>Q63 Output</h3><img src="groupfunction/groupq63.jpg.png"></div>
+<div id="q64" class="output"><h3>Q64 Output</h3><img src="groupfunction/groupq64.jpg.png"></div>
+<div id="q65" class="output"><h3>Q65 Output</h3><img src="groupfunction/groupq65.jpg.png"></div>
+
+<div id="q66" class="output"><h3>Q66 Output</h3><img src="groupfunction/groupq66.jpg.png"></div>
+<div id="q67" class="output"><h3>Q67 Output</h3><img src="groupfunction/groupq67.jpg.png"></div>
+<div id="q68" class="output"><h3>Q68 Output</h3><img src="groupfunction/groupq68.jpg.png"></div>
+<div id="q69" class="output"><h3>Q69 Output</h3><img src="groupfunction/groupq69.jpg.png"></div>
+<div id="q70" class="output"><h3>Q70 Output</h3><img src="groupfunction/groupq70.jpg.png"></div>
+
+<!-- Continue same pattern -->
+
+<div id="q70" class="output"><h3>Q70 Output</h3><img src="groupfunction/groupq70.jpg.png"></div>
+
+
+</body>
+</html>

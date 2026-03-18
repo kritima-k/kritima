@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LIKE Operator – Oracle SQL</title>
+  <link rel="stylesheet" href="style.css">
+  <a href="index.html">
+   <button>⬅ Back to Home</button>
+</a>
+</head>
+
+<body>
+
+<header>
+  <h1>DATABASE MANAGEMENT SYSTEM</h1>
+  <p><b>Name:</b> Kritima</p>
+  <p><b>Class:</b> BCA (4TH SEM)</p>
+  <p><b>Topic:</b> LIKE Operator (60 Questions)</p>
+</header>
+
+<h2>LIKE OPERATOR QUESTIONS</h2>
+
+<ol>
+  <li><a href="#q1">Display employees whose name starts with A.</a></li>
+  <li><a href="#q2">Display employees whose name starts with S.</a></li>
+  <li><a href="#q3">Display employees whose name ends with N.</a></li>
+  <li><a href="#q4">Display employees whose name ends with R.</a></li>
+  <li><a href="#q5">Display employees whose name contains LL.</a></li>
+  <li><a href="#q6">Display employees whose name contains AR.</a></li>
+  <li><a href="#q7">Display employees whose job starts with M.</a></li>
+  <li><a href="#q8">Display employees whose job ends with AN.</a></li>
+  <li><a href="#q9">Display employees whose job contains CL.</a></li>
+  <li><a href="#q10">Display departments whose location starts with N.</a></li>
+
+  <li><a href="#q11">Display employees whose name has exactly 4 characters.</a></li>
+  <li><a href="#q12">Display employees whose name has exactly 5 characters.</a></li>
+  <li><a href="#q13">Display employees whose name has A as the second character.</a></li>
+  <li><a href="#q14">Display employees whose name has L as the third character.</a></li>
+  <li><a href="#q15">Display employees whose job has exactly 6 characters.</a></li>
+
+  <li><a href="#q16">Display employees whose name ends with N.</a></li>
+  <li><a href="#q17">Display employees whose job ends with ER.</a></li>
+  <li><a href="#q18">Display employees whose name starts with A and ends with N.</a></li>
+  <li><a href="#q19">Display employees whose name has exactly 2 characters before E.</a></li>
+  <li><a href="#q20">Display employees whose name has exactly 1 character after A.</a></li>
+
+  <li><a href="#q21">Display employees whose name starts with A and ends with N.</a></li>
+  <li><a href="#q22">Display employees whose name contains E anywhere.</a></li>
+  <li><a href="#q23">Display employees whose name does not contain A.</a></li>
+  <li><a href="#q24">Display employees whose job contains MAN.</a></li>
+  <li><a href="#q25">Display employees whose job does not start with C.</a></li>
+
+  <li><a href="#q26">Display employees whose name contains two L consecutively.</a></li>
+  <li><a href="#q27">Display employees whose name starts with J and has S anywhere.</a></li>
+  <li><a href="#q28">Display employees whose job starts with S and ends with AN.</a></li>
+  <li><a href="#q29">Display employees whose name contains A as the second last character.</a></li>
+  <li><a href="#q30">Display employees whose name contains exactly one character between A and E.</a></li>
+
+  <li><a href="#q31">Display employees whose name starts with S and salary &gt; 2000.</a></li>
+  <li><a href="#q32">Display employees whose job ends with MAN and department is 20.</a></li>
+  <li><a href="#q33">Display employees whose name contains A and commission is NULL.</a></li>
+  <li><a href="#q34">Display employees whose job starts with C and salary &lt; 1500.</a></li>
+  <li><a href="#q35">Display employees whose name ends with S and hired after 1981.</a></li>
+
+  <li><a href="#q36">Display employees whose name starts with M and department is not 10.</a></li>
+  <li><a href="#q37">Display employees whose job contains ER and salary between 2000 and 3000.</a></li>
+  <li><a href="#q38">Display employees whose name starts with A or job starts with S.</a></li>
+  <li><a href="#q39">Display employees whose name contains I and manager is NOT NULL.</a></li>
+  <li><a href="#q40">Display employees whose name ends with N and commission is NOT NULL.</a></li>
+
+  <li><a href="#q41">Display employee name as Name whose name starts with S, ordered alphabetically.</a></li>
+  <li><a href="#q42">Display employee name and salary as Pay whose name contains A, ordered by salary.</a></li>
+  <li><a href="#q43">Display employees whose job starts with M, ordered by job and salary.</a></li>
+  <li><a href="#q44">Display employees whose name ends with E, ordered by hire date.</a></li>
+  <li><a href="#q45">Display employee name and annual salary whose name starts with J.</a></li>
+
+  <li><a href="#q46">Display employees whose name contains R, ordered by department number.</a></li>
+  <li><a href="#q47">Display employee name whose job ends with AN.</a></li>
+  <li><a href="#q48">Display employees whose name starts with K, ordered by salary descending.</a></li>
+  <li><a href="#q49">Display employees whose name contains L, ordered by name and salary.</a></li>
+  <li><a href="#q50">Display employees whose job starts with C, ordered by job.</a></li>
+
+  <li><a href="#q51">Display employees whose name has exactly 6 characters and ends with R.</a></li>
+  <li><a href="#q52">Display employees whose name has A as the third character.</a></li>
+  <li><a href="#q53">Display employees whose name has E as the second character from end.</a></li>
+  <li><a href="#q54">Display employees whose name contains at least two characters before A.</a></li>
+  <li><a href="#q55">Display employees whose job contains exactly one A.</a></li>
+
+  <li><a href="#q56">Display employees whose name does not start with a vowel.</a></li>
+  <li><a href="#q57">Display employees whose job does not contain ER.</a></li>
+  <li><a href="#q58">Display employees whose name starts and ends with the same character.</a></li>
+  <li><a href="#q59">Display employees whose name contains A and E in any order.</a></li>
+  <li><a href="#q60">Display employees whose name contains A but not as the first character.</a></li>
+</ol>
+
+<!-- OUTPUT SECTIONS -->
+
+<div id="q1" class="output"><h3>Q1 Output</h3><img src="likeclaus/likeq1.jpg.png"></div>
+<div id="q2" class="output"><h3>Q2 Output</h3><img src="likeclaus/likeq2.jpg.png"></div>
+<div id="q3" class="output"><h3>Q3 Output</h3><img src="likeclaus/likeq3.jpg.png"></div>
+<div id="q4" class="output"><h3>Q4 Output</h3><img src="likeclaus/likeq4.jpg.png"></div>
+<div id="q5" class="output"><h3>Q5 Output</h3><img src="likeclaus/likeq5.jpg.png"></div>
+
+<div id="q6" class="output"><h3>Q6 Output</h3><img src="likeclaus/likeq6.jpg.png"></div>
+<div id="q7" class="output"><h3>Q7 Output</h3><img src="likeclaus/likeq7.jpg.png"></div>
+<div id="q8" class="output"><h3>Q8 Output</h3><img src="likeclaus/likeq8.jpg.png"></div>
+<div id="q9" class="output"><h3>Q9 Output</h3><img src="likeclaus/likeq9.jpg.png"></div>
+<div id="q10" class="output"><h3>Q10 Output</h3><img src="likeclaus/likeq10.jpg.png"></div>
+
+<div id="q11" class="output"><h3>Q11 Output</h3><img src="likeclaus/likeq11.jpg.png"></div>
+<div id="q12" class="output"><h3>Q12 Output</h3><img src="likeclaus/likeq12.jpg.png"></div>
+<div id="q13" class="output"><h3>Q13 Output</h3><img src="likeclaus/likeq13.jpg.png"></div>
+<div id="q14" class="output"><h3>Q14 Output</h3><img src="likeclaus/likeq14.jpg.png"></div>
+<div id="q15" class="output"><h3>Q15 Output</h3><img src="likeclaus/likeq15.jpg.png"></div>
+
+<div id="q16" class="output"><h3>Q16 Output</h3><img src="likeclaus/likeq16.jpg.png"></div>
+<div id="q17" class="output"><h3>Q17 Output</h3><img src="likeclaus/likeq17.jpg.png"></div>
+<div id="q18" class="output"><h3>Q18 Output</h3><img src="likeclaus/likeq18.jpg.png"></div>
+<div id="q19" class="output"><h3>Q19 Output</h3><img src="likeclaus/likeq19.jpg.png"></div>
+<div id="q20" class="output"><h3>Q20 Output</h3><img src="likeclaus/likeq20.jpg.png"></div>
+
+<div id="q21" class="output"><h3>Q21 Output</h3><img src="likeclaus/likeq21.jpg.png"></div>
+<div id="q22" class="output"><h3>Q22 Output</h3><img src="likeclaus/likeq22.jpg.png"></div>
+<div id="q23" class="output"><h3>Q23 Output</h3><img src="likeclaus/likeq23.jpg.png"></div>
+<div id="q24" class="output"><h3>Q24 Output</h3><img src="likeclaus/likeq24.jpg.png"></div>
+<div id="q25" class="output"><h3>Q25 Output</h3><img src="likeclaus/likeq25.jpg.png"></div>
+
+<div id="q26" class="output"><h3>Q26 Output</h3><img src="likeclaus/likeq26.jpg.png"></div>
+<div id="q27" class="output"><h3>Q27 Output</h3><img src="likeclaus/likeq27.jpg.png"></div>
+<div id="q28" class="output"><h3>Q28 Output</h3><img src="likeclaus/likeq28.jpg.png"></div>
+<div id="q29" class="output"><h3>Q29 Output</h3><img src="likeclaus/likeq29.jpg.png"></div>
+<div id="q30" class="output"><h3>Q30 Output</h3><img src="likeclaus/likeq30.jpg.png"></div>
+
+<div id="q31" class="output"><h3>Q31 Output</h3><img src="likeclaus/likeq31.jpg.png"></div>
+<div id="q32" class="output"><h3>Q32 Output</h3><img src="likeclaus/likeq32.jpg.png"></div>
+<div id="q33" class="output"><h3>Q33 Output</h3><img src="likeclaus/likeq33.jpg.png"></div>
+<div id="q34" class="output"><h3>Q34 Output</h3><img src="likeclaus/likeq34.jpg.png"></div>
+<div id="q35" class="output"><h3>Q35 Output</h3><img src="likeclaus/likeq35.jpg"></div>
+
+<div id="q36" class="output"><h3>Q36 Output</h3><img src="likeclaus/likeq36.jpg.png"></div>
+<div id="q37" class="output"><h3>Q37 Output</h3><img src="likeclaus/likeq37.jpg.png"></div>
+<div id="q38" class="output"><h3>Q38 Output</h3><img src="likeclaus/likeq38.jpg.png"></div>
+<div id="q39" class="output"><h3>Q39 Output</h3><img src="likeclaus/likeq39.jpg.png"></div>
+<div id="q40" class="output"><h3>Q40 Output</h3><img src="likeclaus/likeq40.jpg.png"></div>
+
+<div id="q41" class="output"><h3>Q41 Output</h3><img src="likeclaus/likeq41.jpg.png"></div>
+<div id="q42" class="output"><h3>Q42 Output</h3><img src="likeclaus/likeq42.jpg.png"></div>
+<div id="q43" class="output"><h3>Q43 Output</h3><img src="likeclaus/likeq43.jpg.png"></div>
+<div id="q44" class="output"><h3>Q44 Output</h3><img src="likeclaus/likeq44.jpg.png"></div>
+<div id="q45" class="output"><h3>Q45 Output</h3><img src="likeclaus/likeq45.jpg.png"></div>
+
+<div id="q46" class="output"><h3>Q46 Output</h3><img src="likeclaus/likeq46.jpg.png"></div>
+<div id="q47" class="output"><h3>Q47 Output</h3><img src="likeclaus/likeq47.jpg.png"></div>
+<div id="q48" class="output"><h3>Q48 Output</h3><img src="likeclaus/likeq48.jpg.png"></div>
+<div id="q49" class="output"><h3>Q49 Output</h3><img src="likeclaus/likeq49.jpg.png"></div>
+<div id="q50" class="output"><h3>Q50 Output</h3><img src="likeclaus/likeq50.jpg.png"></div>
+
+<div id="q51" class="output"><h3>Q51 Output</h3><img src="likeclaus/likeq51.jpg.png"></div>
+<div id="q52" class="output"><h3>Q52 Output</h3><img src="likeclaus/likeq52.jpg.png"></div>
+<div id="q53" class="output"><h3>Q53 Output</h3><img src="likeclaus/likeq53.jpg.png"></div>
+<div id="q54" class="output"><h3>Q54 Output</h3><img src="likeclaus/likeq54.jpg.png"></div>
+<div id="q55" class="output"><h3>Q55 Output</h3><img src="likeclaus/likeq55.jpg.png"></div>
+
+<div id="q56" class="output"><h3>Q56 Output</h3><img src="likeclaus/likeq56.jpg.png"></div>
+<div id="q57" class="output"><h3>Q57 Output</h3><img src="likeclaus/likeq57.jpg.png"></div>
+<div id="q58" class="output"><h3>Q58 Output</h3><img src="likeclaus/likeq58.jpg.png"></div>
+<div id="q59" class="output"><h3>Q59 Output</h3><img src="likeclaus/likeq59.jpg.png"></div>
+<div id="q60" class="output"><h3>Q60 Output</h3><img src="likeclaus/likeq60.jpg.png"></div>
+
+
+>
+
+<div id="q60" class="output"><h3>Q60 Output</h3><img src="likeclaus/likeq60.jpg"></div>
+
+
+</body>
+</html>
